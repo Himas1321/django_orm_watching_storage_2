@@ -6,7 +6,6 @@ from datacenter.visit_time import get_duration, format_duration, is_visit_long
 
 
 def storage_information_view(request):
-    # Программируем здесь
 
     active_visits = Visit.objects.filter(leaved_at=None)
 
@@ -25,7 +24,7 @@ def storage_information_view(request):
 
 
     context = {
-        'non_closed_visits': non_closed_visits,  # не закрытые посещения
+        'non_closed_visits': non_closed_visits,
     }
     return render(request, 'storage_information.html', context)
 
