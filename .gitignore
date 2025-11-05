@@ -1,6 +1,5 @@
 .env
 __pycache__
 .replit
-requirements.txt
 pyproject.toml
 poetry.lock
